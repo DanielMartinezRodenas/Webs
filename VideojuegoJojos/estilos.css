@@ -1,0 +1,251 @@
+h1 {
+    font: bold 30px Arial Narrow Bold Italic;
+}
+
+.h1tit {
+    color: #b08f26;
+    font: bold 30px Impact;
+}
+
+h2 {
+    font: bold 20px italian; 
+}
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
+}
+
+body{
+    text-align: center;
+    background-image: url("imagenes/foto1.png");
+    cursor: url('data:image/x-icon;base64,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'), auto;
+}
+
+.agrupar {
+    background: -webkit-linear-gradient(90deg, white 10%, pink 90%);
+    background: -moz-linear-gradient(90deg, white 10%, pink 90%);
+    background: -ms-linear-gradient(90deg, white 10%, pink 90%);
+    background: -o-linear-gradient(90deg, white 10%, pink 90%);
+    background: linear-gradient(90deg, white 10%, pink 90%);
+    margin: 0px 50px;
+}
+
+.cabecera h1 {
+    text-align: left;
+}
+
+#titulo {
+    margin: 0px;
+    padding: 0 20px;
+    color: 	#795085;
+}
+
+.menu{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li { 
+    float: left;
+    list-style: none;
+    margin: 0px 5px;
+    font: bold 20px Arial Narrow Bold Italic;
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #7D2262;
+    color: white;
+}
+
+.menu li :hover {
+    color: purple;
+    background-color: #FA8EDA;
+}
+
+.seccion {
+    margin: 20px;
+    width: 60%;
+    float: left;
+}
+
+.seccionreserva {
+    margin: 3% 15%;
+}
+
+.seccioncurriculum {
+    margin: 3% 15%;
+}
+
+.curriculum {
+    padding: 2%;
+    margin: 20px 170px;
+}
+
+article {
+    background: #fffbb9;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px 60px;
+}
+
+.articlereserva {
+    background: #fffbb9;
+    border: 1px solid grey;
+    padding: 20px;
+    padding-bottom: 1%;
+    margin: 20px 100px;
+}
+
+article footer {
+    text-align: left;
+    margin: 20px;
+}
+
+.lateral{
+    margin: 50px 0;
+    width: 30%;
+    float: left;
+}
+
+.lateral blockquote {
+    border: 1px solid black;
+    background: #fffbb9;
+    padding: 30px;
+}
+
+.pie {
+    clear: both;
+    padding: 10px;
+    background: grey;
+    color: white;
+}
+
+header #logo {
+    white-space: nowrap;
+    letter-spacing: 0;
+    background: url("imagenes/logo.png") center left no-repeat;
+    background-size: contain;
+    width: 105px;
+    height: 30px;
+    display: block;
+    color: white;
+}
+
+video {
+    width: 81.43%;
+    border: silver 5px solid;
+    border-image-source: url("marcos/marcodorado.png");
+    background: gold;
+    margin-top: 1%;
+}
+
+#banner {
+    width: 100%;
+}
+
+.informacionlegal {
+    text-align: justify;
+    margin: 2% 15%;
+    padding: 2% 4%;
+    border: 3px solid gold;
+}
+
+#infolegal {
+    text-decoration: none;
+}
+
+.slider {
+	width: 80%;
+	margin: 2% auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 600%;    /*Si añadimos una foto más hay que incrementar un 100% más, si no, se queda patata*/
+	
+	animation: cambio 25s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	14% {margin-left: 0;}
+	
+	15% {margin-left: -100%;}
+	34% {margin-left: -100%;}
+	
+	35% {margin-left: -200%;}
+	54% {margin-left: -200%;}
+	
+	55% {margin-left: -300%;}
+	74% {margin-left: -300%;}
+    
+    75% {margin-left: -400%;}
+    88% {margin-left: -400%;}
+    
+    89% {margin-left: -500%;}
+    100% {margin-left: -500%;}
+    
+}
+
+.slider2 {
+	width: 80%;
+	margin: 2% auto;
+	overflow: hidden;
+}
+
+.slider2 ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio2 25s infinite alternate linear;
+}
+
+.slider2 li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider2 img {
+	width: 100%;
+}
+
+@keyframes cambio2 {
+	0% {margin-left: 0;}
+	32% {margin-left: 0;}
+	
+	33% {margin-left: -100%;}
+	66% {margin-left: -100%;}
+	
+	67% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+	
+}
+
+
+fieldset {
+    padding: 2%;
+}
+
+.ficheros {
+    list-style: none;
+}
+
+#barraprogreso {
+    width: 470px;
+}

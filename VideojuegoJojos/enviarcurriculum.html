@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="JoJo's Bizarre Adventure: Eyes of Heaven">
+        <meta name="author" content="Alejandro Soto Nicolás y Daniel Martínez Ródenas">
+        <meta name="keywords" content="konoha se muere sl curriculum, curriculum konoha se muere sl, konoha se muere curriculum">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="shortcut icon" href="icono/dabjojo.ico">
+        <title>Déjanos tu currículum | JoJo's Bizarre Adventure: Eyes of Heaven</title>
+        
+        <script type="text/javascript">
+              // Código javascript de: https://internet80.com/blog/subir-un-archivo-con-html5/
+              //Función para seleccionar un archivo y que te diga su tamaño y el tipo de archivo que es
+              function selectedFile() {
+                var archivoSeleccionado = document.getElementById("myfile");
+                var file = archivoSeleccionado.files[0];
+                if (file) {
+                    var fileSize = 0;
+                    if (file.size > 1048576) {
+                        fileSize = (Math.round(file.size * 100 / 1048576) / 100).toString() + ' MB';
+                    } else {
+                        fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + ' Kb';
+                    var divfileSize = document.getElementById('fileSize');
+                    var divfileType = document.getElementById('fileType');
+                    divfileSize.innerHTML = 'Tamaño: ' + fileSize;
+                    divfileType.innerHTML = 'Tipo: ' + file.type;
+                    }
+                }
+              }     
+            // Para enviar el fichero
+            function uploadFile(){
+                var url = "";   //En la URL pondríamos el lugar donde queremos que envíe el fichero
+                var archivoSeleccionado = document.getElementById("myfile");
+                var file = archivoSeleccionado.files[0];
+                var fd = new FormData();    //Permite instanciar vía JavaScript un formulario web, es decir, es como si colocáramos con etiquetas HTML un formulario, o bien se puede hacer referencia a uno ya existente asignándolo a un objeto FormData
+                fd.append("archivo", file); // Para adjuntar valores a un formulario instanciado o referenciado con FormData se utiliza el método append(archivo, objeto), de esta manera se agrega nuestro objeto File con el nombre de archivo.
+                var xmlHTTP= new XMLHttpRequest();
+                xmlHTTP.upload.addEventListener("progress", progressFunction, false);
+                xmlHTTP.addEventListener("load", transferCompleteFunction, false);
+                xmlHTTP.addEventListener("error", uploadFailed, false);
+                xmlHTTP.addEventListener("abort", uploadCanceled, false);
+                xmlHTTP.open("POST", url, true);
+                xmlHTTP.send(fd);
+            }       
+            // Va actualizando la barra de progreso según el porcentaje que se haya subido del archivo
+            function progressFunction(evt){
+                var progressBar = document.getElementById("progressBar");
+                var percentageDiv = document.getElementById("percentageCalc");
+                if (evt.lengthComputable) {
+                    progressBar.max = evt.total;
+                    progressBar.value = evt.loaded;
+                    percentageDiv.innerHTML = Math.round(evt.loaded / evt.total * 100) + "%";
+                }
+            }
+            // Función que te da una alerta de que ha comenzado a subirse el archivo
+            function loadStartFunction(evt){
+                alert('Subiendo archivo...');
+            }
+            // Función que indica que se ha subido el archivo correctamente
+            function transferCompleteFunction(evt){
+                alert('¡Transferencia completa!');
+                var progressBar = document.getElementById("progressBar");
+                var percentageDiv = document.getElementById("percentageCalc");
+                progressBar.value = 100;
+                percentageDiv.innerHTML = "100%";
+            }   
+            // Función para indicar que ha habido un Raúl
+            function uploadFailed(evt) {
+                alert("¡Hubo un Raúl al subir el archivo!");
+            }
+            // Función para indicar que se ha cancelado la subida del archivo
+            function uploadCanceled(evt) {
+                alert("La operación se canceló o la conexión fue interrumpida.");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="agrupar">
+            <nav class="menu">
+                <a id="logo" href="index.html">
+                    <img src="imagenes/logo.png">
+                </a>
+                <h1 id="titulo">JoJo's Bizarre Adventure: Eyes of Heaven</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservar.html">Reservar</a></li>
+                    <li><a href="enviarcurriculum.html">Enviar currículum</a></li>
+                    <li><a href="galeriafotos.html">Galería de fotos</a></li>
+                </ul>
+            </nav>
+            <section class="seccioncurriculum">
+                <h1 class="h1tit">Adjuntar Currículum</h1>
+                <article class="curriculum">
+                   <div class="field">
+                       <ul class="ficheros">
+                            <li><input type="file" id="myfile" name="myfile" class="rm-input" onchange="selectedFile();"></li><br>
+                            <li><div id="fileSize"></div></li><br>
+                            <li><div id="fileType"></div></li><br>
+                            <li><input type="button" value="Subir Archivo" onClick="uploadFile()" class="rm-button"></li>
+                        </ul>
+                    </div>
+                    <progress id="barraprogreso" value="0" max="100" class="rm-progress"></progress>
+                </article>
+            </section>
+
+            <footer class="pie">
+                <p>Todos los derechos reservados. Todos los demás copyrights y marcas registradas son propiedad de sus respectivos dueños.</p>
+                <a id="infolegal" href="informacionlegal.html">Información legal</a>
+            </footer>
+        </div>
+    </body>
+</html>

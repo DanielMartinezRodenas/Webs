@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="JoJo's Bizarre Adventure: Eyes of Heaven">
+        <meta name="author" content="Alejandro Soto Nicolás y Daniel Martínez Ródenas">
+        <meta name="keywords" content="reserva jojo eoh, reserva jojo's bizarre adventure, reserva JoJo's Bizarre Adventure: Eyes of Heaven, reserva juego jojo ps3, reserva juego jojo ps4">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="shortcut icon" href="icono/dabjojo.ico">
+        <title>¡Reserva ya tu copia de JoJo's Bizarre Adventure: Eyes of Heaven!</title>
+    </head>
+    <body>
+        <div class="agrupar">
+            <nav class="menu">
+                <a id="logo" href="index.html">
+                    <img src="imagenes/logo.png">
+                </a>
+                <h1 id="titulo">JoJo's Bizarre Adventure: Eyes of Heaven</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservar.html">Reservar</a></li>
+                    <li><a href="enviarcurriculum.html">Enviar currículum</a></li>
+                    <li><a href="galeriafotos.html">Galería de fotos</a></li>
+                </ul>
+            </nav>
+            <h1 class="h1tit">Reserva JoJo's Bizarre Adventure: Eyes of Heaven </h1>
+            
+            <section class="seccionreserva">
+                <article class="articlereserva">
+                    <form action="recibir.php" method="post">
+                        <fieldset>
+                             <legend style="font: bold 25px BlenderProBold,sans-serif">Reserva</legend>
+                             <label for="name"> Nombre: </label><br>
+                             <input type="text" name="nombre" placeholder="Nombre" maxlength="20" required><br><br>
+
+                             <label for="surname"> Apellidos: </label><br>
+                             <input type="text" name="apellidos" placeholder="Apellidos" maxlength="50" required><br><br>
+                             
+                             <label for="email"> Email: </label><br>
+                             <input type="email" name="email" placeholder="Email" maxlength="30" required><br><br> 
+
+                             <label for="version"> Versión del juego: </label><br>
+                             <select name="version">
+                                 <option value="---">---</option>
+                                 <option value="inglesa">Inglesa</option>
+                                 <option value="japonesa">Japonesa</option>
+                             </select><br><br>  
+
+                             <label for="plataforma">Selecciona plataforma: </label><br>
+                             <select name="plataforma">
+                                 <option value="---">---</option>
+                                 <option value="ps3">PS3</option>
+                                 <option value="ps4">PS4</option>
+                             </select><br><br>
+                             <input type="checkbox" name="aceptocondiciones" id="aceptocondiciones" required> <label for="condiciones">He leído y acepto los términos de privacidad y protección de datos</label><br />
+                             </fieldset>
+                             <br>
+                             <input type="submit" value="Reservar" name="accion">
+                    </form>
+                    <footer> 
+                        
+                    </footer>
+                </article>
+
+            </section>
+            <footer class="pie">
+                <p>Todos los derechos reservados. Todos los demás copyrights y marcas registradas son propiedad de sus respectivos dueños.</p>
+                <a id="infolegal" href="informacionlegal.html">Información legal</a>
+            </footer>
+        </div>
+    </body>
+</html>
