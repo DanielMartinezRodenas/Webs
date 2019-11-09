@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <!--https://fontawesome.com/-->
+        <meta charset="UTF-8">
+        <title>Registrar</title>
+        <script src="https://kit.fontawesome.com/4daf44bde6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <form class="formularioregistro" action="register.php" method="post">
+            <h1>Regístrate</h1>
+            <div class="contenedor">
+                <label for="name">Nombre: </label>
+                <div class="input-contenedor">
+                    <i class="far fa-user icon"></i>
+                    <input type="text" name="user" placeholder="Nombre">
+                </div>
+
+                <label for="ap1">Primer apellido: </label>
+                <div class="input-contenedor">
+                    <i class="far fa-user icon"></i>
+                    <input type="text" name="ap1" placeholder="Primer apellido">
+                </div>
+
+                <label for="ap1">Segundo apellido: </label>
+                <div class="input-contenedor">
+                    <i class="far fa-user icon"></i>
+                    <input type="text" name="ap2" placeholder="Segundo apellido">
+                </div>
+
+                <label for="edad">Edad: </label>
+                <div class="input-contenedor">
+                    <i class="far fa-user icon"></i>
+                    <input type="text" name="edad" placeholder="Edad">
+                </div>
+
+                <label for="pass">Contraseña: </label>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name="pass"placeholder="Contraseña">
+                </div>
+
+                <label for="repass">Repetir contraseña: </label>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name="repass" placeholder="Repetir contraseña">
+                </div>
+
+                <input type="submit" value="Regístrate" class="button">
+                <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                <p>¿Ya tienes una cuenta?<a class="link" href="login.html"> Iniciar sesión</a></p>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario {
+    background: white;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+.formularioregistro {
+    background: white;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+.input-contenedor1 {
+    margin-bottom: 15px;
+    padding: 30px;
+    border: 1px solid grey;
+    display: flex;
+    list-style:none
+}
+
+#registrar {
+    margin: 10px 70px;
+}
+
+#login {
+    margin: 10px 50px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center; 
+    color: grey;    
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+@media(min-width:768px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+
+    .formularioregistro {
+        margin: auto;
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 2%;
+    }
+}
