@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="estilos.css">
+        <title>The Legend of Zelda</title>
+        <script src="https://kit.fontawesome.com/4daf44bde6.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="icono/link.ico">
+        <script type="text/javascript">
+            $(document).ready(function() {
+                setTimeout(function() {
+                $(".textosvideo").fadeIn(3000);
+                },10000);
+            });
+        </script>
+    </head>
+    <body>
+        <a name="top"></a>
+        <nav>
+            <div id="logotipo">
+                <img src="imagenes/logotipo2.png" alt="Logotipo" id="logo" width=90></a>
+            </div>
+            <div id="titulo"><h1>The Legend of Zelda</h1></div>
+            <ul class="nav-list">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#informacion">Información</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#img1" class="personaje">
+                            <p id="palabro2">Personajes</p>
+                            <img src="imagenes/personajes.png" alt="Personajes" id="personajes" width="112">
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="searchbar" action="">
+                <img src="https://www.pngkey.com/png/full/87-872187_lupa-search-icon-white-png.png" alt="Lupa" class="button">
+                <input type="search" id="search">
+            </form>
+        </nav>
+        <div class="zonavideo">
+            <video class="intro" muted autoplay>
+                <source src="videos/zelda_intro.mp4" type="video/mp4" width="100%">
+            </video>
+            <div class="textosvideo">
+                <img src="imagenes/logozelda.png" class="logozelda" alt="Nombre Zelda" width="40%">
+                <div class="introletras">
+                    <p id="letrasintro">Viaja al reino de Hyrule y descubre las incontables batallas entre el bien y el mal y los secretos de la todopoderosa Trifuerza.</p>
+                </div>
+            </div>
+            <img src="imagenes/hyrule_rule.png" class="separador" alt="Separador" width="100%">
+        </div>
+        <article class="principal">
+            <img id="giratorio" src="imagenes/fondoarticle.png">
+            <a name="informacion"></a>
+            <div class="informacion">
+                <p id="subtitulos">INFORMACIÓN</p><br>
+                <p>Según las antiguas leyendas, el mundo fue creado por 3 diosas: Din, Nayru y Farore.
+                   Antes de dejar el mundo que crearon, las tres diosas crearon la Trifuerza -
+                   un objeto mágico hecho de tres triángulos de oro - y se lo confiaron a la diosa Hylia. </p><br>
+                <p>La Trifuerza concede un deseo a quienes poseen las tres virtudes de las diosas: poder, sabiduría y coraje. 
+                   Si uno no tiene el equilibrio adecuado de virtudes, la Trifuerza se dividirá en tres partes. 
+                   Solo reuniendo las tres piezas se puede obtener el verdadero poder de la Trifuerza.</p>
+            </div>
+            <a name="personajes"></a>
+            <div class="personajes">
+                <a href="#img1"><h3>Galería de personajes</h3></a>
+                <div class="modal" id="img1">
+                    <h3>Link</h3>
+                    <div class="imagen">
+                        <a href="#img7" class="iconos"><img  src="imagenes/iconoking.png"></a>
+                        <a href="#img2"><img src="imagenes/link.jpg"></a>
+                        <a href="#img2" class="iconos"><img  src="imagenes/iconozelda.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+                
+                <div class="modal" id="img2">
+                    <h3>Zelda</h3>
+                    <div class="imagen">
+                        <a href="#img1" class="iconos"><img  src="imagenes/iconolink.png"></a>
+                        <a href="#img3"><img src="imagenes/zelda.jpg"></a>
+                        <a href="#img3" class="iconos"><img  src="imagenes/iconoganon.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+                
+                <div class="modal" id="img3">
+                    <h3>Ganondorf</h3>
+                    <div class="imagen">
+                        <a href="#img2" class="iconos"><img  src="imagenes/iconozelda.png"></a>
+                        <a href="#img4"><img src="imagenes/ganon.jpg"></a>
+                        <a href="#img4" class="iconos"><img  src="imagenes/iconosheik.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+                
+                <div class="modal" id="img4">
+                    <h3>Sheika</h3>
+                    <div class="imagen">
+                        <a href="#img3" class="iconos"><img  src="imagenes/iconoganon.png"></a>
+                        <a href="#img5"><img src="imagenes/Sheik.jpg"></a>
+                        <a href="#img5" class="iconos"><img  src="imagenes/iconomidna.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+                
+                <div class="modal" id="img5">
+                    <h3>Midna</h3>
+                    <div class="imagen">
+                        <a href="#img4" class="iconos"><img  src="imagenes/iconosheik.png"></a>
+                        <a href="#img6"><img src="imagenes/midna.jpg"></a>
+                        <a href="#img6" class="iconos"><img  src="imagenes/iconotingle.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+
+                <div class="modal" id="img6">
+                    <h3>Tingle</h3>
+                    <div class="imagen">
+                        <a href="#img5" class="iconos"><img  src="imagenes/iconomidna.png"></a>
+                        <a href="#img7"><img src="imagenes/tingle.jpg"></a>
+                        <a href="#img7" class="iconos"><img  src="imagenes/iconoking.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+
+                <div class="modal" id="img7">
+                    <h3>King of Hyrule</h3>
+                    <div class="imagen">
+                        <a href="#img6" class="iconos"><img  src="imagenes/iconotingle.png"></a>
+                        <a href="#img1"><img src="imagenes/king.jpg"></a>
+                        <a href="#img1" class="iconos"><img  src="imagenes/iconolink.png"></a>
+                    </div>
+                    <a class="cerrar" href="#personajes">X</a>
+                </div>
+
+            </div>
+        </article>
+        <footer id="footer">
+            <div class="imagenessociales">
+                <div id="texto">
+                    <p>Síguenos en nuestras redes:</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.facebook.com/LegendofZeldaES/" id="alogos"><img id="log" src="svg/logo-facebook.svg" alt="Logo de Facebook" width="48"></a>
+                    <a href="https://twitter.com/ZeldaOfficialJP" id="alogos"><img id="log" src="svg/logo-twitter.svg" alt="Logo de Twitter" width="48"></a>
+                    <a href="https://www.youtube.com/channel/UCqU9ZolHQcmbB5D1_eGONSA" id="alogos"><img id="log" src="svg/logo-youtube.svg" alt="Logo de Youtube" width="48"></a>
+                    <a href="https://www.instagram.com/zeldanintendo/" id="alogos"><img id="log" src="svg/logo-instagram.svg" alt="Logo de Instagram" width="48"></a>
+                </div> 
+            </div>
+        </footer>
+    </body>
+</html>

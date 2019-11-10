@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 22px;
+}
+
+#logotipo {
+  margin: auto;
+}
+
+#logo {
+	margin-top: 5px;
+}
+
+#titulo {
+  margin: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+	text-align: center;
+  	color: #FFF;
+	font-family: Hylia;
+	margin: 0;
+}	
+
+h3 {
+	text-align: center;
+  	color: #FFF;
+	font-family: Hylia;
+	margin: 0;
+}	
+
+a {
+	color: #FFF;
+}
+
+p {
+	text-align: center;
+}
+
+nav {
+	top: 0;
+	width: 100%;
+  	background-color: rgba(17, 36, 20, 0.7);
+	display: flex;
+	position: fixed;
+	border-bottom: 1px solid rgb(248, 224, 85);
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	font-family: Hylia;
+	}
+
+nav a {
+	display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 90px;
+    text-decoration: none;
+    width: 132px;
+	height: 90px;
+	text-align: center;
+	background: url(imagenes/button-background.jpg) no-repeat;
+	border-radius: 3px;
+}
+
+nav a:hover {
+	background-image: linear-gradient(
+      rgba(84, 240, 92, 0.3), 
+      rgba(24, 66, 26, 0.3)
+    ),
+ 	url(imagenes/button-background.jpg); 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 90px; /* distancia de juegos a información */
+}
+	
+/* Para que salga el menú hacia abajo */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+/* Centra los li */
+.nav-list {
+	margin: auto;
+}
+
+#personajes {
+	position: absolute;
+}
+
+/* Para centrar y poner encima la imagen al pasar por encima */ 
+.personaje #personajes {
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 10px;
+	z-index: 99;
+	border-radius: 10px;
+}
+
+.personaje:hover #personajes {
+	display: inline;
+}
+
+/* para quitar el texto de detrás */
+.personaje:hover #palabro2 {
+	visibility: hidden;
+}
+
+@font-face {
+	font-family: Hylia;
+	src: url(fonts/Hylia.otf);
+}
+
+.searchbar {
+	height: 100%;
+	margin: 1rem;
+	margin-right: 40px;
+}
+
+#search {
+	width: 15rem;
+    height: 4rem;
+	outline: none;
+	border-radius: 3rem;
+	padding: 1rem 1rem 1rem 4rem;
+	background: transparent;
+	color: white;
+}
+
+.button {
+	height: 2rem;
+    position: absolute;
+    top: 32px;
+	right: 225px;
+}
+
+.separador {
+	margin-top: 53.5%;
+	position: absolute;
+}
+
+video {
+	position: absolute;
+	width: 100%;
+	z-index: -101;
+}
+
+.textosvideo {
+	position: absolute;
+    z-index: -100;
+    text-align: center;
+	width: 100%;
+	margin-top: 20%;
+	display: none;
+}
+
+.introletras {
+	color: white;
+    margin: 1% 31%;
+}
+
+#letrasintro {
+	font-size: 130%;
+}
+
+.principal {
+	background-color: black;
+	background-image: url("imagenes/informacionbackground2.jpg");
+	background-size: cover;
+    position: absolute;
+    z-index: -102;
+    width: 100%;
+    height: 100%;
+	margin-top: 54.25%;
+}
+
+#subtitulos {
+	font-family: Hylia;
+}
+
+.informacion {
+	color: white;
+	margin: 21%;
+	margin-top: 10%;
+	margin-bottom: 50px;
+	padding: 0 10%;
+}
+
+#giratorio {
+	animation:spin 60s linear infinite;
+	position: absolute;
+	width: 50%;
+    top: 10px;
+	left: 25%;
+	z-index: -10;
+	filter: blur(1px);
+}
+
+/*Animación para que gire */
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Para la galería de imágenes */
+.modal {
+	display: none;
+}
+
+.modal:target {
+	display: block;
+	position: absolute;
+	background: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Título de cada foto */
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.iconos {
+	width: 90px;
+}
+
+.imagen {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 150px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 325px;
+	height: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+#descripciones {
+	color: white;
+}
+
+footer {
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 214%;
+}
+
+#log {
+	border-radius: 5px;
+}
+
+.imagenessociales {
+	margin-top: 40px;
+    display: grid;
+    align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+#logos {
+	margin-top: 10%;
+	text-align-last: justify;
+}
