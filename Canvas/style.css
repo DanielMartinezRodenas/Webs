@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+  
+canvas {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+  
+.textos {
+  position: absolute;
+  display: grid;
+  top: 22%;
+  left: 32%;
+  background-color: rgba(23, 100, 23, 0.6);
+  text-align-last: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#boton {
+  height: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#boton:hover {
+  background: rgba(47, 202, 47, 0.7);
+  cursor: pointer;
+}
+
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+p, a {
+  color: gray;
+}
+
+a:hover {
+  color: rgb(157, 130, 206);
+}
